@@ -1,0 +1,30 @@
+{% extends 'auctions/layout.html' %}
+
+{% block body %}
+<div class ="page-heading">
+    <h2>My Listings</h2>
+</div>
+
+    <div class="listing-section">
+        {% for listing in listings %}
+        <div class="box">
+            <div class="box-content">
+
+                <a href="{% url 'listing' listing.id %}">
+                        <h2 class="box-heading">{{ listing.title }}</h2>
+                        <img src="{{ listing.image_url }}" class="box-img" alt="{{ listing.title }}">
+
+                        <div class="box-body">
+                            <div class="box-text">{{ listing.description }}</div>
+                            <p><b>Price: $</b>{{ listing.starting_bid }}</p>
+                            <div>Category: {{ listing.category }}</div>
+                            <!--<form action="{% url 'watchlist' %}" method="post">
+                                <input type="Submit" name="watchlist" value="{{ listing.id }}">
+                            </form> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

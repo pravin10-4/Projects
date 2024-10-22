@@ -1,0 +1,253 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    height: 60px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 3px 0px -2px #d4d3d2;
+    margin-bottom: 15px;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 150px;
+    font-size: 1.6rem;
+}
+
+.logo i {
+    margin-right:5px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+.nav-a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-a:hover {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.profile option {
+    font-size: 1.2rem;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.listing-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 500px;
+    width: 23%;
+    padding: 20px 0px 0px;
+    border: 1.7px solid gainsboro;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.box:hover {
+    box-shadow: 0 0 12px 0 gainsboro;
+}
+
+.box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.box-img {
+    display: block;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+}
+
+.box-body {
+    margin-top: 10px;
+    color: black;
+}
+
+.box-body p{
+    margin-top: 7px;
+}
+
+.box-heading {
+    text-align: center;
+    color: black;
+}
+
+/* Create form */
+.form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-contents:hover, .form-contents:active {
+    box-shadow: 0 0 12px 0 gainsboro;
+}
+.form-contents {
+    width: 60%;
+    border: 1.7px solid gainsboro;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.choose-cat {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.index-choose-cat {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+
+}
+.index-choose-cat > label, select, input{
+    margin-right: 5px;
+}
+
+/*.form input[type="text"]:focus, .form input[type="number"]:focus, .form input[type="url"]:focus {
+    box-shadow: 0 0 20px 0 gainsboro;
+}*/
+
+.form input[type="text"]  {
+    width: 100%;
+}
+
+.form label {
+    margin-right: 5px;
+}
+
+.form textarea {
+    width: 300px;
+}
+
+.form-descript label, input{
+    display: block;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+}
+
+.form-control textarea {
+    display: block;
+}
+
+textarea#id_description {
+    width: 100%;
+}
+
+.form-field label {
+    margin-right: 5px;
+}
+
+label {
+    text-align: center;
+}
+
+.form-field input, .form-select, textarea{
+    width: 90%;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+/*Listing */
+.winner {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.loser {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.auctionmssg {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.listing-content {
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-evenly ;
+    margin: 0 10px 10px;
+}
+
+.listing-details {
+    width:40%;
+    margin-right: 15px;
+}
+
+.addWatchlist {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.listing-comment {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 20px 20px;
+    padding-left: 50px;
+}

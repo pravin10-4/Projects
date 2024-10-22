@@ -1,0 +1,18 @@
+{% extends 'auctions/layout.html' %}
+
+{% block body %}
+    <h1>Categories</h1>
+    <form action="{% url 'categoryitems' %}" method="post">
+        {% csrf_token %}
+
+                <a name="category">
+                    {% for category in categories %}
+                        <option value="{{ category.id }}">{{ category }}</option>
+                    {% endfor %}
+                </a>
+                
+    </form>
+{% endblock %}
+<!--<a href="{% url 'category_items' category.id %}">
+            {{ category }}
+        </a> -->
